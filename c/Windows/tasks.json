@@ -1,0 +1,74 @@
+// {
+//     "tasks": [
+//         {
+//             "label": "Build C++",
+//             "type": "shell",
+//             "command": "g++",
+//             "args": [
+//                 "-o",
+//                 "output",
+//                 "${file}",
+//             ]
+//         },
+//         {
+//             "label": "run c++",
+//             "type":"shell",
+//             "command": "${fileDirname}/output",
+//             "dependsOn":"Build C++"
+//         }
+
+//     ],
+//     "version": "2.0.0"
+// }
+
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang++ アクティブなファイルのビルド",
+            "command": "C:/Program Files/LLVM/bin/clang.exe",
+            "args": [
+                "-std=c17",
+                "-g",
+                "${file}",
+                "-o",
+                "${workspaceFolder}/build/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "デバッガーによって生成されたタスク。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc アクティブなファイルのビルド",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
+            "args": [
+                "-std=c17",
+                "-g",
+                "${file}",
+                "-o",
+                "${workspaceFolder}/build/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "デバッガーによって生成されたタスク。"
+        }
+    ],
+    "version": "2.0.0"
+}
