@@ -26,7 +26,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: clang++ アクティブなファイルのビルド",
-            "command": "/usr/bin/clang++",
+            "command": "C:/Program Files/LLVM/bin/clang++.exe",
             "args": [
                 "-std=c++17",
                 "-g",
