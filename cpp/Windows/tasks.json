@@ -1,26 +1,3 @@
-// {
-//     "tasks": [
-//         {
-//             "label": "Build C++",
-//             "type": "shell",
-//             "command": "g++",
-//             "args": [
-//                 "-o",
-//                 "output",
-//                 "${file}",
-//             ]
-//         },
-//         {
-//             "label": "run c++",
-//             "type":"shell",
-//             "command": "${fileDirname}/output",
-//             "dependsOn":"Build C++"
-//         }
-
-//     ],
-//     "version": "2.0.0"
-// }
-
 {
     "tasks": [
         {
