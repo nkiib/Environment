@@ -1,36 +1,9 @@
-// {
-// 	"version": "0.2.0",
-// 	"configurations": [
-// 		{
-// 			"name": "(gdb) Launch",
-// 			"type": "cppdbg",
-// 			"request": "launch",
-// 			"program": "${workspaceRoot}/Project_Name/main.exe", // <- ここは環境による
-// 			"args": [],
-// 			"environment": [],
-// 			"cwd": "${workspaceFolder}",
-// 			"stopAtEntry": false,
-// 			"externalConsole": true, // <- 外部ターミナル使用の有無
-// 			"MIMode": "gdb",
-// 			"miDebuggerPath": "C:\\mingw64\\bin\\gdb.exe", // <- ここは環境による
-// 			"setupCommands": [
-// 				{
-// 					"description": "Enable pretty-printing for gdb",
-// 					"text": "-enable-pretty-printing",
-// 					"ignoreFailures": true
-// 				}
-// 			],
-// 			"preLaunchTask": "run c++" // <- 実行するtask名を指定する
-// 		},
-// 	]
-// }
-
 {
     "version": "0.2.0",
     "configurations": [
   
         {
-            "name": "clang++ - アクティブ ファイルのビルドとデバッグ",
+            "name": "clang - アクティブ ファイルのビルドとデバッグ",
             // "type": "cppdbg",
             "type": "lldb",
             "request": "launch",
@@ -44,7 +17,7 @@
             "preLaunchTask": "C/C++: clang++ アクティブなファイルのビルド"
         },
         {
-          "name": "g++ - アクティブ ファイルのビルドとデバッグ",
+          "name": "gcc - アクティブ ファイルのビルドとデバッグ",
           // "type": "cppdbg",
           "type": "lldb",
           "request": "launch",
